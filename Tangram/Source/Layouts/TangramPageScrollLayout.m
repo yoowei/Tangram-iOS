@@ -541,7 +541,7 @@
         self.pageControl.numberOfPages = itemModels.count;
     }
     //保证只加了一次，做一次数据校验
-    if (self.infiniteLoop && itemModels.count > 2 && nil == self.firstItemModel && nil == self.lastItemModel) {
+    if (self.infiniteLoop && itemModels.count > 1 && nil == self.firstItemModel && nil == self.lastItemModel) {
         self.firstItemModel = (NSObject<TangramItemModelProtocol> *)[self duplicateObject:[self.itemModels firstObject]];
         self.lastItemModel = (NSObject<TangramItemModelProtocol> *)[self duplicateObject:[self.itemModels lastObject]];
         NSMutableArray *mutableItemModels = [itemModels mutableCopy];
@@ -607,8 +607,8 @@
 
 #pragma mark - 定时器相关
 - (void)startTimer
-{
-    if (self.autoScrollTime > 0.0 && self.itemModels.count > 2) {
+{//这个地方就是为了解决2张图的时候，不能自动滚动，不显示小圆点
+    if (self.autoScrollTime > 0.0 && self.itemModels.count > 1) {
         if (self.timer) {
             [self.timer fire];
         }

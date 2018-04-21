@@ -321,27 +321,8 @@
                                        "0"
                                        ]
                             }
-                            },
-                            {
-                            "type": "1",
-                            "imgUrl": "https://gw.alicdn.com/tps/TB1Nin9JFXXXXbXaXXXXXXXXXXX-224-224.png",
-                            "style": {
-                            "margin": [
-                                       "0",
-                                       "0",
-                                       "2",
-                                       "0"
-                                       ]
                             }
-                            },
-                            {
-                            "imgUrl": "https://img.alicdn.com/tps/i1/TB1DwDoKpXXXXcIXFXXYCR.YFXX-422-200.jpg",
-                            "type": "1"
-                            },
-                            {
-                            "imgUrl": "https://img.alicdn.com/tps/i1/TB1DwDoKpXXXXcIXFXXYCR.YFXX-422-200.jpg",
-                            "type": "1"
-                            }
+                          
                 ]
             }
         ]
